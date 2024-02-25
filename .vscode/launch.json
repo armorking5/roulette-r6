@@ -1,0 +1,17 @@
+{
+    // Usare IntelliSense per informazioni sui possibili attributi.
+    // Al passaggio del mouse vengono visualizzate le descrizioni degli attributi esistenti.
+    // Per altre informazioni, visitare: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch and Debug Hosted Blazor WebAssembly App",
+            "type": "blazorwasm",
+            "request": "launch",
+            "hosted": true,
+            "program": "${workspaceFolder}/bin/Debug/net8.0/roulette-r6.dll",
+            "cwd": "${workspaceFolder}"
+        }
+
+    ]
+}

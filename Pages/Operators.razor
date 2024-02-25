@@ -1,0 +1,46 @@
+﻿@page "/"
+@inject HttpClient Http
+
+<PageTitle>Weather</PageTitle>
+
+<h1>R6 Randomizer</h1>
+
+<p>Randomize your pick of operators!</p>
+
+@if (operators == null)
+{
+	<p><em>Loading...</em></p>
+}
+else
+{
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Side</th>
+				<th>Age</th>
+				<th>Unit</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var op in operators)
+			{
+				<tr>
+					<td>@op.Name</td>
+					<td>@op.Side</td>
+					<td>@op.Age</td>
+					<td>@op.Unit</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+}
+
+@code {
+    private Classes.Operator[]? operators;
+
+	protected override async Task OnInitializedAsync()
+	{
+		operators = await Http.GetFromJsonAsync<Classes.Operator[]>("sample-data/operators.json");
+	}
+}
