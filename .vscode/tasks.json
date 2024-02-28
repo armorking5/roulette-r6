@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+    "tasks": [
+        {
+            "type": "dotnet",
+            "task": "watch",
+            "file": "F:\\CODES\\roulette-r6\\roulette-r6.csproj",
+            "problemMatcher": [],
+            "label": "dotnet: watch"
+        },
+        {
+            "type": "npm",
+            "script": "watch",
+            "problemMatcher": [],
+            "label": "npm: watch",
+            "detail": "cross-env NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./Styles/app.pcss -o ./wwwroot/css/app.min.css --watch"
+        }
+    ]
+}

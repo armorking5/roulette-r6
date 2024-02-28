@@ -1,11 +1,16 @@
 ﻿@page "/"
+@inject ILogger<Operators> Logger
 @inject HttpClient Http
 
-<PageTitle>Weather</PageTitle>
+<PageTitle>Randomizer R6</PageTitle>
 
-<h1>R6 Randomizer</h1>
+<h1 class="justify-center text-center py-4">
+	R6 Randomizer
+</h1>
 
-<p>Randomize your pick of operators!</p>
+<p class="text-center justify-center font-bold">
+	Randomize your pick of operators!
+</p>
 
 @if (operators == null)
 {
@@ -13,6 +18,23 @@
 }
 else
 {
+
+
+	<EditForm Model="searchObj" OnSubmit="Submit" FormName="Starship1">
+		<div>
+			<label>
+				Side:
+				<InputSelect id="side" @bind-Value="searchObj.side">
+					<option value="@Classes.OperatorSideEnum.Defense">Defense</option>
+					<option value="@Classes.OperatorSideEnum.Attack">Attack</option>
+				</InputSelect>
+			</label>
+		</div>
+		<div>
+			<button type="submit">Submit</button>
+		</div>
+	</EditForm>
+
 	<table class="table">
 		<thead>
 			<tr>
@@ -37,7 +59,15 @@ else
 }
 
 @code {
-    private Classes.Operator[]? operators;
+	[SupplyParameterFromForm]
+	public Classes.SearchOperator searchObj { get; set; } = new Classes.SearchOperator();
+
+	private Classes.Operator[]? operators;
+
+	private void Submit()
+	{
+		Logger.LogInformation("Side = {Side}", searchObj.side);
+	}
 
 	protected override async Task OnInitializedAsync()
 	{
