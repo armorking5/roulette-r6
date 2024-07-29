@@ -47,7 +47,7 @@ else
 			@foreach (var op in operators)
 			{
 				<tr>
-					<td><img src="~@op.IconURL" asp-append-version="true" alt="@op.Safename"></td>
+					<td><img src="@op.Icon_Url" asp-append-version="true" alt="@op.Safename"></td>
 					<td>@op.Name</td>
 					<td>@op.Side</td>
 				</tr>
@@ -61,7 +61,6 @@ else
 	public Classes.SearchOperator searchObj { get; set; } = new Classes.SearchOperator();
 
 	private Classes.Operator[]? operators;
-
 	private void Submit()
 	{
 		Logger.LogInformation("Side = {Side}", searchObj.side);
