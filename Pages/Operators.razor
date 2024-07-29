@@ -9,7 +9,7 @@
 </h1>
 
 <p class="text-center justify-center font-bold">
-	Randomize your pick of operators!
+	Randomize your pick of operators
 </p>
 
 @if (operators == null)
@@ -38,20 +38,18 @@ else
 	<table class="table">
 		<thead>
 			<tr>
+				<th>Image</th>
 				<th>Name</th>
 				<th>Side</th>
-				<th>Age</th>
-				<th>Unit</th>
 			</tr>
 		</thead>
 		<tbody>
 			@foreach (var op in operators)
 			{
 				<tr>
+					<td><img src="~@op.IconURL" asp-append-version="true" alt="@op.Safename"></td>
 					<td>@op.Name</td>
 					<td>@op.Side</td>
-					<td>@op.Age</td>
-					<td>@op.Unit</td>
 				</tr>
 			}
 		</tbody>
@@ -71,6 +69,6 @@ else
 
 	protected override async Task OnInitializedAsync()
 	{
-		operators = await Http.GetFromJsonAsync<Classes.Operator[]>("sample-data/operators.json");
+		operators = await Http.GetFromJsonAsync<Classes.Operator[]>("data/ops.json");
 	}
 }
