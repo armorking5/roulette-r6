@@ -1,1 +1,392 @@
-[{"name": "Iana", "safename": "iana", "side": 1, "icon_url": "/images/ops/iana.png"}, {"name": "N\u00c3\u00b8kk", "safename": "nokk", "side": 1, "icon_url": "/images/ops/nokk.png"}, {"name": "Maverick", "safename": "maverick", "side": 1, "icon_url": "/images/ops/maverick.png"}, {"name": "Ace", "safename": "ace", "side": 1, "icon_url": "/images/ops/ace.png"}, {"name": "Pulse", "safename": "pulse", "side": 2, "icon_url": "/images/ops/pulse.png"}, {"name": "Caveira", "safename": "caveira", "side": 2, "icon_url": "/images/ops/caveira.png"}, {"name": "Bandit", "safename": "bandit", "side": 2, "icon_url": "/images/ops/bandit.png"}, {"name": "Vigil", "safename": "vigil", "side": 2, "icon_url": "/images/ops/vigil.png"}, {"name": "Nomad", "safename": "nomad", "side": 1, "icon_url": "/images/ops/nomad.png"}, {"name": "Tachanka", "safename": "tachanka", "side": 2, "icon_url": "/images/ops/tachanka.png"}, {"name": "Glaz", "safename": "glaz", "side": 1, "icon_url": "/images/ops/glaz.png"}, {"name": "Amaru", "safename": "amaru", "side": 1, "icon_url": "/images/ops/amaru.png"}, {"name": "Ying", "safename": "ying", "side": 1, "icon_url": "/images/ops/ying.png"}, {"name": "Melusi", "safename": "melusi", "side": 2, "icon_url": "/images/ops/melusi.png"}, {"name": "Kapkan", "safename": "kapkan", "side": 2, "icon_url": "/images/ops/kapkan.png"}, {"name": "Wamai", "safename": "wamai", "side": 2, "icon_url": "/images/ops/wamai.png"}, {"name": "Azami ", "safename": "azami", "side": 2, "icon_url": "/images/ops/azami.png"}, {"name": "Castle", "safename": "castle", "side": 2, "icon_url": "/images/ops/castle.png"}, {"name": "Buck", "safename": "buck", "side": 1, "icon_url": "/images/ops/buck.png"}, {"name": "Dokkaebi", "safename": "dokkaebi", "side": 1, "icon_url": "/images/ops/dokkaebi.png"}, {"name": "Thermite", "safename": "thermite", "side": 1, "icon_url": "/images/ops/thermite.png"}, {"name": "Ash", "safename": "ash", "side": 1, "icon_url": "/images/ops/ash.png"}, {"name": "Capit\u00c3\u00a3o", "safename": "capitao", "side": 1, "icon_url": "/images/ops/capitao.png"}, {"name": "Thorn", "safename": "thorn", "side": 2, "icon_url": "/images/ops/thorn.png"}, {"name": "Alibi", "safename": "alibi", "side": 2, "icon_url": "/images/ops/alibi.png"}, {"name": "Mira", "safename": "mira", "side": 2, "icon_url": "/images/ops/mira.png"}, {"name": "Oryx", "safename": "oryx", "side": 2, "icon_url": "/images/ops/oryx.png"}, {"name": "Thunderbird", "safename": "thunderbird", "side": 2, "icon_url": "/images/ops/thunderbird.png"}, {"name": "Finka", "safename": "finka", "side": 1, "icon_url": "/images/ops/finka.png"}, {"name": "Jackal", "safename": "jackal", "side": 1, "icon_url": "/images/ops/jackal.png"}, {"name": "Brava", "safename": "brava", "side": 1, "icon_url": "/images/ops/brava.png"}, {"name": "Lion", "safename": "lion", "side": 1, "icon_url": "/images/ops/lion.png"}, {"name": "Lesion", "safename": "lesion", "side": 2, "icon_url": "/images/ops/lesion.png"}, {"name": "Kaid", "safename": "kaid", "side": 2, "icon_url": "/images/ops/kaid.png"}, {"name": "Rook", "safename": "rook", "side": 2, "icon_url": "/images/ops/rook.png"}, {"name": "Doc", "safename": "doc", "side": 2, "icon_url": "/images/ops/doc.png"}, {"name": "Warden", "safename": "warden", "side": 2, "icon_url": "/images/ops/warden.png"}, {"name": "Grim", "safename": "grim", "side": 1, "icon_url": "/images/ops/grim.png"}, {"name": "Blitz", "safename": "blitz", "side": 1, "icon_url": "/images/ops/blitz.png"}, {"name": "Aruni", "safename": "aruni", "side": 2, "icon_url": "/images/ops/aruni.png"}, {"name": "Frost", "safename": "frost", "side": 2, "icon_url": "/images/ops/frost.png"}, {"name": "Kali", "safename": "kali", "side": 1, "icon_url": "/images/ops/kali.png"}, {"name": "Valkyrie", "safename": "valkyrie", "side": 2, "icon_url": "/images/ops/valkyrie.png"}, {"name": "Maestro", "safename": "maestro", "side": 2, "icon_url": "/images/ops/maestro.png"}, {"name": "Fuze", "safename": "fuze", "side": 1, "icon_url": "/images/ops/fuze.png"}, {"name": "Ram", "safename": "ram", "side": 1, "icon_url": "/images/ops/ram.png"}, {"name": "J\u00c3\u00a4ger", "safename": "jager", "side": 2, "icon_url": "/images/ops/jager.png"}, {"name": "Hibana", "safename": "hibana", "side": 1, "icon_url": "/images/ops/hibana.png"}, {"name": "Smoke", "safename": "smoke", "side": 2, "icon_url": "/images/ops/smoke.png"}, {"name": "Zero", "safename": "zero", "side": 1, "icon_url": "/images/ops/zero.png"}, {"name": "Zofia", "safename": "zofia", "side": 1, "icon_url": "/images/ops/zofia.png"}, {"name": "Osa", "safename": "osa", "side": 1, "icon_url": "/images/ops/osa.png"}, {"name": "Montagne", "safename": "montagne", "side": 1, "icon_url": "/images/ops/montagne.png"}, {"name": "Sledge", "safename": "sledge", "side": 1, "icon_url": "/images/ops/sledge.png"}, {"name": "Echo", "safename": "echo", "side": 2, "icon_url": "/images/ops/echo.png"}, {"name": "Flores", "safename": "flores", "side": 1, "icon_url": "/images/ops/flores.png"}, {"name": "Mozzie", "safename": "mozzie", "side": 2, "icon_url": "/images/ops/mozzie.png"}, {"name": "Blackbeard", "safename": "blackbeard", "side": 1, "icon_url": "/images/ops/blackbeard.png"}, {"name": "Deimos", "safename": "deimos", "side": 1, "icon_url": "/images/ops/deimos.png"}, {"name": "Gridlock", "safename": "gridlock", "side": 1, "icon_url": "/images/ops/gridlock.png"}, {"name": "Thatcher", "safename": "thatcher", "side": 1, "icon_url": "/images/ops/thatcher.png"}, {"name": "Goyo", "safename": "goyo", "side": 2, "icon_url": "/images/ops/goyo.png"}, {"name": "Tubar\u00c3\u00a3o", "safename": "tubarao", "side": 2, "icon_url": "/images/ops/tubarao.png"}, {"name": "Clash", "safename": "clash", "side": 2, "icon_url": "/images/ops/clash.png"}, {"name": "Sens", "safename": "sens", "side": 1, "icon_url": "/images/ops/sens.png"}]
+[
+	{
+		"name": "Iana",
+		"safename": "iana",
+		"side": 1,
+		"icon_url": "/images/ops/iana.png"
+	},
+	{
+		"name": "Nøkk",
+		"safename": "nokk",
+		"side": 1,
+		"icon_url": "/images/ops/nokk.png"
+	},
+	{
+		"name": "Maverick",
+		"safename": "maverick",
+		"side": 1,
+		"icon_url": "/images/ops/maverick.png"
+	},
+	{
+		"name": "Ace",
+		"safename": "ace",
+		"side": 1,
+		"icon_url": "/images/ops/ace.png"
+	},
+	{
+		"name": "Pulse",
+		"safename": "pulse",
+		"side": 2,
+		"icon_url": "/images/ops/pulse.png"
+	},
+	{
+		"name": "Caveira",
+		"safename": "caveira",
+		"side": 2,
+		"icon_url": "/images/ops/caveira.png"
+	},
+	{
+		"name": "Bandit",
+		"safename": "bandit",
+		"side": 2,
+		"icon_url": "/images/ops/bandit.png"
+	},
+	{
+		"name": "Vigil",
+		"safename": "vigil",
+		"side": 2,
+		"icon_url": "/images/ops/vigil.png"
+	},
+	{
+		"name": "Nomad",
+		"safename": "nomad",
+		"side": 1,
+		"icon_url": "/images/ops/nomad.png"
+	},
+	{
+		"name": "Tachanka",
+		"safename": "tachanka",
+		"side": 2,
+		"icon_url": "/images/ops/tachanka.png"
+	},
+	{
+		"name": "Glaz",
+		"safename": "glaz",
+		"side": 1,
+		"icon_url": "/images/ops/glaz.png"
+	},
+	{
+		"name": "Amaru",
+		"safename": "amaru",
+		"side": 1,
+		"icon_url": "/images/ops/amaru.png"
+	},
+	{
+		"name": "Ying",
+		"safename": "ying",
+		"side": 1,
+		"icon_url": "/images/ops/ying.png"
+	},
+	{
+		"name": "Melusi",
+		"safename": "melusi",
+		"side": 2,
+		"icon_url": "/images/ops/melusi.png"
+	},
+	{
+		"name": "Kapkan",
+		"safename": "kapkan",
+		"side": 2,
+		"icon_url": "/images/ops/kapkan.png"
+	},
+	{
+		"name": "Wamai",
+		"safename": "wamai",
+		"side": 2,
+		"icon_url": "/images/ops/wamai.png"
+	},
+	{
+		"name": "Azami ",
+		"safename": "azami",
+		"side": 2,
+		"icon_url": "/images/ops/azami.png"
+	},
+	{
+		"name": "Castle",
+		"safename": "castle",
+		"side": 2,
+		"icon_url": "/images/ops/castle.png"
+	},
+	{
+		"name": "Buck",
+		"safename": "buck",
+		"side": 1,
+		"icon_url": "/images/ops/buck.png"
+	},
+	{
+		"name": "Dokkaebi",
+		"safename": "dokkaebi",
+		"side": 1,
+		"icon_url": "/images/ops/dokkaebi.png"
+	},
+	{
+		"name": "Thermite",
+		"safename": "thermite",
+		"side": 1,
+		"icon_url": "/images/ops/thermite.png"
+	},
+	{
+		"name": "Ash",
+		"safename": "ash",
+		"side": 1,
+		"icon_url": "/images/ops/ash.png"
+	},
+	{
+		"name": "Capitão",
+		"safename": "capitao",
+		"side": 1,
+		"icon_url": "/images/ops/capitao.png"
+	},
+	{
+		"name": "Thorn",
+		"safename": "thorn",
+		"side": 2,
+		"icon_url": "/images/ops/thorn.png"
+	},
+	{
+		"name": "Alibi",
+		"safename": "alibi",
+		"side": 2,
+		"icon_url": "/images/ops/alibi.png"
+	},
+	{
+		"name": "Mira",
+		"safename": "mira",
+		"side": 2,
+		"icon_url": "/images/ops/mira.png"
+	},
+	{
+		"name": "Oryx",
+		"safename": "oryx",
+		"side": 2,
+		"icon_url": "/images/ops/oryx.png"
+	},
+	{
+		"name": "Thunderbird",
+		"safename": "thunderbird",
+		"side": 2,
+		"icon_url": "/images/ops/thunderbird.png"
+	},
+	{
+		"name": "Finka",
+		"safename": "finka",
+		"side": 1,
+		"icon_url": "/images/ops/finka.png"
+	},
+	{
+		"name": "Jackal",
+		"safename": "jackal",
+		"side": 1,
+		"icon_url": "/images/ops/jackal.png"
+	},
+	{
+		"name": "Brava",
+		"safename": "brava",
+		"side": 1,
+		"icon_url": "/images/ops/brava.png"
+	},
+	{
+		"name": "Lion",
+		"safename": "lion",
+		"side": 1,
+		"icon_url": "/images/ops/lion.png"
+	},
+	{
+		"name": "Lesion",
+		"safename": "lesion",
+		"side": 2,
+		"icon_url": "/images/ops/lesion.png"
+	},
+	{
+		"name": "Kaid",
+		"safename": "kaid",
+		"side": 2,
+		"icon_url": "/images/ops/kaid.png"
+	},
+	{
+		"name": "Rook",
+		"safename": "rook",
+		"side": 2,
+		"icon_url": "/images/ops/rook.png"
+	},
+	{
+		"name": "Doc",
+		"safename": "doc",
+		"side": 2,
+		"icon_url": "/images/ops/doc.png"
+	},
+	{
+		"name": "Warden",
+		"safename": "warden",
+		"side": 2,
+		"icon_url": "/images/ops/warden.png"
+	},
+	{
+		"name": "Grim",
+		"safename": "grim",
+		"side": 1,
+		"icon_url": "/images/ops/grim.png"
+	},
+	{
+		"name": "Blitz",
+		"safename": "blitz",
+		"side": 1,
+		"icon_url": "/images/ops/blitz.png"
+	},
+	{
+		"name": "Aruni",
+		"safename": "aruni",
+		"side": 2,
+		"icon_url": "/images/ops/aruni.png"
+	},
+	{
+		"name": "Frost",
+		"safename": "frost",
+		"side": 2,
+		"icon_url": "/images/ops/frost.png"
+	},
+	{
+		"name": "Kali",
+		"safename": "kali",
+		"side": 1,
+		"icon_url": "/images/ops/kali.png"
+	},
+	{
+		"name": "Valkyrie",
+		"safename": "valkyrie",
+		"side": 2,
+		"icon_url": "/images/ops/valkyrie.png"
+	},
+	{
+		"name": "Maestro",
+		"safename": "maestro",
+		"side": 2,
+		"icon_url": "/images/ops/maestro.png"
+	},
+	{
+		"name": "Fuze",
+		"safename": "fuze",
+		"side": 1,
+		"icon_url": "/images/ops/fuze.png"
+	},
+	{
+		"name": "Ram",
+		"safename": "ram",
+		"side": 1,
+		"icon_url": "/images/ops/ram.png"
+	},
+	{
+		"name": "Jäger",
+		"safename": "jager",
+		"side": 2,
+		"icon_url": "/images/ops/jager.png"
+	},
+	{
+		"name": "Hibana",
+		"safename": "hibana",
+		"side": 1,
+		"icon_url": "/images/ops/hibana.png"
+	},
+	{
+		"name": "Smoke",
+		"safename": "smoke",
+		"side": 2,
+		"icon_url": "/images/ops/smoke.png"
+	},
+	{
+		"name": "Zero",
+		"safename": "zero",
+		"side": 1,
+		"icon_url": "/images/ops/zero.png"
+	},
+	{
+		"name": "Zofia",
+		"safename": "zofia",
+		"side": 1,
+		"icon_url": "/images/ops/zofia.png"
+	},
+	{
+		"name": "Osa",
+		"safename": "osa",
+		"side": 1,
+		"icon_url": "/images/ops/osa.png"
+	},
+	{
+		"name": "Montagne",
+		"safename": "montagne",
+		"side": 1,
+		"icon_url": "/images/ops/montagne.png"
+	},
+	{
+		"name": "Sledge",
+		"safename": "sledge",
+		"side": 1,
+		"icon_url": "/images/ops/sledge.png"
+	},
+	{
+		"name": "Echo",
+		"safename": "echo",
+		"side": 2,
+		"icon_url": "/images/ops/echo.png"
+	},
+	{
+		"name": "Flores",
+		"safename": "flores",
+		"side": 1,
+		"icon_url": "/images/ops/flores.png"
+	},
+	{
+		"name": "Mozzie",
+		"safename": "mozzie",
+		"side": 2,
+		"icon_url": "/images/ops/mozzie.png"
+	},
+	{
+		"name": "Blackbeard",
+		"safename": "blackbeard",
+		"side": 1,
+		"icon_url": "/images/ops/blackbeard.png"
+	},
+	{
+		"name": "Deimos",
+		"safename": "deimos",
+		"side": 1,
+		"icon_url": "/images/ops/deimos.png"
+	},
+	{
+		"name": "Gridlock",
+		"safename": "gridlock",
+		"side": 1,
+		"icon_url": "/images/ops/gridlock.png"
+	},
+	{
+		"name": "Thatcher",
+		"safename": "thatcher",
+		"side": 1,
+		"icon_url": "/images/ops/thatcher.png"
+	},
+	{
+		"name": "Goyo",
+		"safename": "goyo",
+		"side": 2,
+		"icon_url": "/images/ops/goyo.png"
+	},
+	{
+		"name": "Tubarão",
+		"safename": "tubarao",
+		"side": 2,
+		"icon_url": "/images/ops/tubarao.png"
+	},
+	{
+		"name": "Clash",
+		"safename": "clash",
+		"side": 2,
+		"icon_url": "/images/ops/clash.png"
+	},
+	{
+		"name": "Sens",
+		"safename": "sens",
+		"side": 1,
+		"icon_url": "/images/ops/sens.png"
+	}
+]

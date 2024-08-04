@@ -1,14 +1,14 @@
-﻿@page "/"
+@page "/"
 @inject ILogger<Operators> Logger
 @inject HttpClient Http
 
 <PageTitle>Randomizer R6</PageTitle>
 
-<h1 class="justify-center text-center py-4">
+<h1 class="display-2 text-center">
 	R6 Randomizer
 </h1>
 
-<p class="text-center justify-center font-bold">
+<p class="lead text-center">
 	Randomize your pick of operators!
 </p>
 
@@ -19,51 +19,53 @@
 else
 {
 
+	<div class="container">
+		<div class="row d-flex justify-content-center flex-wrap">
 
-	<EditForm Model="searchObj" OnSubmit="Submit" FormName="Starship1">
-		<div>
-			<label>
-				Side:
-				<InputSelect id="side" @bind-Value="searchObj.side">
-					<option value="@Classes.OperatorSideEnum.Defense">Defense</option>
-					<option value="@Classes.OperatorSideEnum.Attack">Attack</option>
-				</InputSelect>
-			</label>
-		</div>
-		<div>
-			<button type="submit">Submit</button>
-		</div>
-	</EditForm>
+			<Button Color="ButtonColor.Primary" @onclick="() => RandomizeOps(Classes.OperatorSideEnum.Defense)"> Randomize only Defense </Button>
+			<Button Color="ButtonColor.Danger" @onclick="() => RandomizeOps(Classes.OperatorSideEnum.Attack)"> Randomize only Attack </Button>
+            <Button Color="ButtonColor.Warning" @onclick="() => RandomizeOps()"> Randomize ALL!! </Button>
+            <Button Color="ButtonColor.Info" @onclick="() => chosenOp = null">Reset</Button>
 
-	<table class="table">
-		<thead>
-			<tr>
-				<th>Image</th>
-				<th>Name</th>
-				<th>Side</th>
-			</tr>
-		</thead>
-		<tbody>
-			@foreach (var op in operators)
-			{
-				<tr>
-					<td><img src="@op.Icon_Url" asp-append-version="true" alt="@op.Safename"></td>
-					<td>@op.Name</td>
-					<td>@op.Side</td>
-				</tr>
-			}
-		</tbody>
-	</table>
+		</div>
+		<div class="row">
+			<div class="d-flex flex-row justify-content-center flex-wrap p-5">
+				@foreach (var op in operators)
+                {
+                    @if (op == chosenOp || chosenOp == null)
+                    {
+                        <Card Class="mb-4" Style="width:10rem;">
+                            <img class="rounded-top" src="@op.Icon_Url" alt="@op.Safename" />
+						    <CardBody>
+							    <CardTitle>@op.Name</CardTitle>
+							    <CardText>@op.Side</CardText>
+						    </CardBody>
+					    </Card>
+                    }
+				}
+			</div>
+		</div>
+
+	</div>
 }
-
 @code {
-	[SupplyParameterFromForm]
-	public Classes.SearchOperator searchObj { get; set; } = new Classes.SearchOperator();
-
-	private Classes.Operator[]? operators;
-	private void Submit()
-	{
-		Logger.LogInformation("Side = {Side}", searchObj.side);
+    
+    private Classes.Operator[]? operators;
+    private Classes.Operator? chosenOp;
+    private void RandomizeOps([Optional] Classes.OperatorSideEnum? choice)
+    {
+        if(operators != null)
+        {
+            var rand = new Random();
+            var filteredOps = operators.AsEnumerable();
+            if (choice != null)
+            {
+                filteredOps = operators.Where((op) => op.Side == choice);
+            }
+            var count = filteredOps.Count();
+            int index = rand.Next(count);
+			chosenOp = filteredOps.ElementAt(index);
+		}
 	}
 
 	protected override async Task OnInitializedAsync()
