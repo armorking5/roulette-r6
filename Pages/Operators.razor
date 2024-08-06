@@ -1,4 +1,4 @@
-@page "/"
+﻿@page "/"
 @inject ILogger<Operators> Logger
 @inject HttpClient Http
 
@@ -22,48 +22,50 @@ else
 	<div class="container">
 		<div class="row d-flex justify-content-center flex-wrap">
 
-			<Button Color="ButtonColor.Primary" @onclick="() => RandomizeOps(Classes.OperatorSideEnum.Defense)"> Randomize only Defense </Button>
-			<Button Color="ButtonColor.Danger" @onclick="() => RandomizeOps(Classes.OperatorSideEnum.Attack)"> Randomize only Attack </Button>
-            <Button Color="ButtonColor.Warning" @onclick="() => RandomizeOps()"> Randomize ALL!! </Button>
-            <Button Color="ButtonColor.Info" @onclick="() => chosenOp = null">Reset</Button>
+			<Button Color="ButtonColor.Primary" @onclick="() => RandomizeOps(Classes.OperatorSideEnum.Defense)"> Randomize
+				only Defense </Button>
+			<Button Color="ButtonColor.Danger" @onclick="() => RandomizeOps(Classes.OperatorSideEnum.Attack)"> Randomize
+				only Attack </Button>
+			<Button Color="ButtonColor.Warning" @onclick="() => RandomizeOps()"> Randomize ALL!! </Button>
+			<Button Color="ButtonColor.Info" @onclick="() => chosenOp = null">Reset</Button>
 
 		</div>
 		<div class="row">
 			<div class="d-flex flex-row justify-content-center flex-wrap p-5">
 				@foreach (var op in operators)
-                {
-                    @if (op == chosenOp || chosenOp == null)
-                    {
-                        <Card Class="mb-4" Style="width:10rem;">
-                            <img class="rounded-top" src="@op.Icon_Url" alt="@op.Safename" />
-						    <CardBody>
-							    <CardTitle>@op.Name</CardTitle>
-							    <CardText>@op.Side</CardText>
-						    </CardBody>
-					    </Card>
-                    }
-				}
+					{
+						@if (op == chosenOp || chosenOp == null)
+						{
+							<Card Class="mb-4" Style="width:10rem;">
+								<img class="rounded-top" src="@op.Icon_Url" alt="@op.Safename" />
+								<CardBody>
+									<CardTitle>@op.Name</CardTitle>
+									<CardText>@op.Side</CardText>
+								</CardBody>
+							</Card>
+						}
+					}
 			</div>
 		</div>
 
 	</div>
 }
 @code {
-    
-    private Classes.Operator[]? operators;
-    private Classes.Operator? chosenOp;
-    private void RandomizeOps([Optional] Classes.OperatorSideEnum? choice)
-    {
-        if(operators != null)
-        {
-            var rand = new Random();
-            var filteredOps = operators.AsEnumerable();
-            if (choice != null)
-            {
-                filteredOps = operators.Where((op) => op.Side == choice);
-            }
-            var count = filteredOps.Count();
-            int index = rand.Next(count);
+
+	private Classes.Operator[]? operators;
+	private Classes.Operator? chosenOp;
+	private void RandomizeOps([Optional] Classes.OperatorSideEnum? choice)
+	{
+		if (operators != null)
+		{
+			var rand = new Random();
+			var filteredOps = operators.AsEnumerable();
+			if (choice != null)
+			{
+				filteredOps = operators.Where((op) => op.Side == choice);
+			}
+			var count = filteredOps.Count();
+			int index = rand.Next(count);
 			chosenOp = filteredOps.ElementAt(index);
 		}
 	}
