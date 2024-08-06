@@ -11,9 +11,8 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
+    environment: DEPLOY
     steps:
     - uses: actions/checkout@v4
     - name: Setup .NET
@@ -26,5 +25,22 @@ jobs:
       run: dotnet build --no-restore -c Release
     - name: Test
       run: dotnet test -c Release --no-build --verbosity normal
-    - name Publish
+    - name: Publish
       run: dotnet publish -c Release
+    - name: ssh deploy
+      uses: easingthemes/ssh-deploy@v5.1.0
+      with:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        ARGS: "-rlgoDzvc -i --delete"
+        SOURCE: "bin/Release/net8.0/publish/wwwroot/"
+        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+        TARGET: ${{ secrets.REMOTE_TARGET }}
+        SCRIPT_BEFORE: |
+          whoami
+          ls -al
+        SCRIPT_AFTER: |
+          whoami
+          ls -al
+          echo $RSYNC_STDOUT
+
