@@ -38,9 +38,9 @@ jobs:
         TARGET: ${{ secrets.REMOTE_TARGET }}
         SCRIPT_BEFORE: |
           whoami
-          ls -al
+          ls -al ${{ secrets.REMOTE_TARGET }}
         SCRIPT_AFTER: |
           whoami
-          ls -al
+          ls -al ${{ secrets.REMOTE_TARGET }}
           echo $RSYNC_STDOUT
 
